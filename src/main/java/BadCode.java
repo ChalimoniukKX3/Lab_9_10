@@ -1,14 +1,17 @@
 public class BadCode {
 
     public static int divide(int a, int b) {
-        return a / b; // !! bug: potencjalne dzielenie przez 0 !!
+        if (b == 0) {
+            throw new IllegalArgumentException("Divider cannot be zero");
+        }
+        return a / b;
     }
 
     public static String getPassword() {
-        return "admin123"; // !! code smell: hardcoded secret !!
+        return System.getenv("APP_PASSWORD");
     }
 
     public static void main(String[] args) {
-        System.out.println(divide(10, 0)); // !! 100% crash !!
+        System.out.println(divide(10, 2));
     }
 }
