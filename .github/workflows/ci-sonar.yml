@@ -29,6 +29,6 @@ jobs:
           mvn -B clean verify sonar:sonar \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.organization=chalimoniukkx3 \
-            -Dsonar.projectKey=chalimoniukkx3_Lab_9_10 \
+            -Dsonar.projectKey=ChalimoniukKX3_Lab_9_10 \
             -Dsonar.token=${SONAR_TOKEN} \
             -Dsonar.qualitygate.wait=true
