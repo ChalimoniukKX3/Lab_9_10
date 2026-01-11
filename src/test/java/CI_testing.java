@@ -1,6 +1,6 @@
 package pl.demo;
 
-public class Demo {
+public class CI_testing {
 
     public static int divide(int a, int b) {
         return a / b; // !! bug: potencjalne dzielenie przez 0 !!
