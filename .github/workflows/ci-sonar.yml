@@ -31,7 +31,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=ChalimoniukKX3
+            -Dsonar.projectKey=ChalimoniukKX3_Lab_9_10
             -Dsonar.organization=chalimoniukkx3
             -Dsonar.sources=src
 
