@@ -14,3 +14,4 @@ public class Demo {
         System.out.println(divide(10, 0)); // !! 100% crash !!
     }
 }
+//TEST
