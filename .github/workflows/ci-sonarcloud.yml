@@ -27,8 +27,9 @@ jobs:
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B -ntp sonar:sonar \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.organization=chalimoniukkx3 \
-          -Dsonar.projectKey=ChalimoniukKX3_Lab_9_10 \
-          -Dsonar.qualitygate.wait=true
+        run: |
+          mvn -B -ntp sonar:sonar \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.organization=chalimoniukkx3 \
+            -Dsonar.projectKey=ChalimoniukKX3_Lab_9_10 \
+            -Dsonar.qualitygate.wait=true
